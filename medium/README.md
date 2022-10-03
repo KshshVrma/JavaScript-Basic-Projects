@@ -25,4 +25,4 @@ Please read the [CONTRIBUTING.md](../CONTRIBUTING.md)
 ## License
 **This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE](../LICENSE) file for details**
 
-## Happy Coding! :smile:s
+## Happy Coding! :smile:
