@@ -12,11 +12,11 @@ This repostiory is for beginners of JavaScript who want to contribute to open so
 
 There are three types of projects in this repository:
 - Easy:
-    - These projects are easy to understand and implement. They are for beginners.
+    These projects are easy to understand and implement. They are for beginners.
 - Medium:
-    - These projects are a little bit difficult to understand and implement. They are for intermediate level programmers.
+    These projects are a little bit difficult to understand and implement. They are for intermediate level programmers.
 - Hard:
-    - These projects are difficult to understand and implement. They are for advanced programmers.
+    These projects are difficult to understand and implement. They are for advanced programmers.
     
 ## Rules
 - Please be respectful to everyone.
