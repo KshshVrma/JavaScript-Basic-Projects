@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>DiceGame</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <div class='main'>
+    <div class=heading>
+      <h1>Roll The Dice</h1>
+    </div>
+    <div class='stats'>
+        <div class='variable'>
+            <h3 id='variable__label'>Selected: </h3>
+            <h3 id='variable'></h3>
+        </div>
+        <div class='score'>
+            <h3 id='score__label'>Score: </h3>
+            <h3 id='score'></h3>
+        </div>
+    </div>
+    <div class='game'>
+      <div class='container'>
+        <div id='dice1' class='dice dice-one'>
+          <div id='dice-one-side-one' class='side one'>
+            <div class='dot one-1'></div>
+          </div>
+          <div id='dice-one-side-two' class='side two'>
+            <div class='dot two-1'></div>
+            <div class='dot two-2'></div>
+          </div>
+          <div id='dice-one-side-three' class='side three'>
+            <div class='dot three-1'></div>
+            <div class='dot three-2'></div>
+            <div class='dot three-3'></div>
+          </div>
+          <div id='dice-one-side-four' class='side four'>
+            <div class='dot four-1'></div>
+            <div class='dot four-2'></div>
+            <div class='dot four-3'></div>
+            <div class='dot four-4'></div>
+          </div>
+          <div id='dice-one-side-five' class='side five'>
+            <div class='dot five-1'></div>
+            <div class='dot five-2'></div>
+            <div class='dot five-3'></div>
+            <div class='dot five-4'></div>
+            <div class='dot five-5'></div>
+          </div>
+          <div id='dice-one-side-six' class='side six'>
+            <div class='dot six-1'></div>
+            <div class='dot six-2'></div>
+            <div class='dot six-3'></div>
+            <div class='dot six-4'></div>
+            <div class='dot six-5'></div>
+            <div class='dot six-6'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='numpad'>
+      <div class='num-container'>
+        <div class='upper-num'>
+          <button class='numkey' id='1'  onClick='reply_click(this);'>1</button>
+          <button class='numkey' id='2'  onClick='reply_click(this);'>2</button>
+          <button class='numkey' id='3'  onClick='reply_click(this);'>3</button>
+        </div>
+        <div class='lower-num'>
+          <button class='numkey' id='4' onClick='reply_click(this);'>4</button>
+          <button class='numkey' id='5' onClick='reply_click(this);'>5</button>
+          <button class='numkey' id='6' onClick='reply_click(this);'>6</button>
+        </div>
+     </div>
+    </div>
+    <div class='notice'>
+      <h3 id='notice-statement'></h3>
+    </div>
+    <div class='result'>
+      <h3 id='resulttag'></h3>
+    </div>
+    <div class='replay'>
+      <div class='button_cont'><button class='example_a' id='play_btn' onClick='round();'>Play</button></div>
 
+    </div>
+  </div>
+  <script src='app.js'></script>
+</body>
+</html>
