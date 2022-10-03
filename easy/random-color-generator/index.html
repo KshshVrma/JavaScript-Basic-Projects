@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marcelotk15 - Color Generator</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="app.js" defer></script>
+  
+  <style>@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);</style>
+</head>
+
+<body>
+  <section class="grid w-full h-screen content-center duration-200" id="app">
+    <di class="w-full max-w-[500px] mx-auto flex flex-col justify-center items-center gap-3">
+      <h1 class="text-3xl font-semibold duration-200" id="rgb"></h1>
+      <h1 class="text-3xl font-semibold duration-200" id="hex"></h1>
+
+      <button onclick="App.generateRGBColor()" class="py-1 px-4 rounded-full text-xl duration-200">New Color</button>
+    </di>
+  </section>
+</body>
+</html>

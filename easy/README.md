@@ -13,6 +13,7 @@ This repository contains a collection of beginner programs in JavaScript. These 
 - calculator
 - currency_convertor
 - custom_field_form
+- random-color-generator
 
 ## How to Contribute
 Please read the [CONTRIBUTING.md](../CONTRIBUTING.md)
