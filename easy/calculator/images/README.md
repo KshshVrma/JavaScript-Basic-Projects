@@ -1,3 +1,3 @@
-# Hacktoberfest 2022 - Python Easy Programs
+# Hacktoberfest 2022 - Easy calculator Preview
 
-You can add your Images here.
+![Easy calculator](screenshoot.png)

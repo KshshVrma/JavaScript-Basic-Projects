@@ -1,0 +1,71 @@
+body {
+  font-family:  'Roboto';
+  margin: 0;
+  color: #fff;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://picsum.photos/seed/190/1024");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #333;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#city-temp {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+#city-name {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #333;
+}
+
+#city-date {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#city-weather,
+#city-temp-min {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333;
+}
