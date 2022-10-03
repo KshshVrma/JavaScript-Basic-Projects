@@ -1,0 +1,71 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #35363a;
+    background: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: -2;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+p {
+    max-width: 40em;
+    color: white;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 200%;
+    font-size: 1.7rem;
+    margin-bottom: 70px;
+}
+  
+p:hover {
+    text-decoration: none;
+}
+
+#button {
+    background: radial-gradient(#C04848, #480048);
+    background-blend-mode: 0.5;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px 10px 25px;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 5px;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.4rem;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+  
+@media (max-device-width: 800px) {
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    #button {
+        font-size: 1rem;
+    }
+}
