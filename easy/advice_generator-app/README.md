@@ -14,7 +14,7 @@ This app generates an advice using fetch API when the button is clicked.
 - CSS
 - JavaScript
 
-### Maintainer
+### Contributor
 
 - [Rushikesh Khilari](https://github.com/curator69)
 
