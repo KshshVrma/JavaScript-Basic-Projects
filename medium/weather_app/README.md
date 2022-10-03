@@ -9,7 +9,7 @@ This program is used to display the current weather of a city. It uses the OpenW
 ![Weather App](https://user-images.githubusercontent.com/52570524/91813025-a4d1b600-ec4f-11ea-92ac-2596bfc3fe46.gif)
 
 ### Contributing
-Please read the [CONTRIBUTING.md](../CONTRIBUTING.md)
+Please read the [CONTRIBUTING.md](../../CONTRIBUTING.md)
 
 ### Maintainer
 - [Anamaya](https://www.linkedin.com/in/anamaya1729/)
