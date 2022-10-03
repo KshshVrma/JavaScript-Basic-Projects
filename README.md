@@ -10,11 +10,18 @@ This repository is open to all members of the GitHub community. Any member may c
 
 This repostiory is for beginners of JavaScript who want to contribute to open source. You can learn and contribute to this repository. It contains basic JavaScript projects, that all beginners should know. 
 
+There are three types of projects in this repository:
+- Easy:
+    - These projects are easy to understand and implement. They are for beginners.
+- Medium:
+    - These projects are a little bit difficult to understand and implement. They are for intermediate level programmers.
+- Hard:
+    - These projects are difficult to understand and implement. They are for advanced programmers.
+    
 ## Rules
 - Please be respectful to everyone.
 - Please don't spam.
 - Please don't make any changes to the README.md file.
-- Please don't make any changes to the index.html file.
 - Please read [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
 
 ## How to contribute to this repository
