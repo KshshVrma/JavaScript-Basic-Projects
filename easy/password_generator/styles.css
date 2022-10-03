@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    #e55d87 0%,
+    #5fc3e4 0%,
+    #e55d87 100%
+  );
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inconsolata', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.main {
+  background-color: rgba(10, 14, 49, 1);
+  width: 50%;
+  border-radius: 15px;
+}
+
+.display {
+  padding: 2rem;
+}
+
+.pw {
+  background-color: rgba(28, 33, 65, 1);
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  height: 100px;
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.pw button {
+  color: #ffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 0.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, 20%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+}
+.pw:hover button {
+  opacity: 1;
+  transform: translate(0, 0%);
+}
+.pw-body {
+  padding: 2rem;
+  color: #eee;
+}
+.form {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 0.3rem;
+  background-color: rgba(28, 33, 65, 1);
+}
+
+.generate {
+  background-image: linear-gradient(
+    to right,
+    #e55d87 0%,
+    #5fc3e4 51%,
+    #e55d87 100%
+  );
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.generate:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+}
