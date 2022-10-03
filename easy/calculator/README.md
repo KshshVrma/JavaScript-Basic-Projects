@@ -35,8 +35,8 @@ The output will be displayed on the display screen of the calculator.
 ```
 
 ### Image Example
-It is just an example. You can use your own design.
-![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.usatoday.com%2Fstory%2Ftech%2Ftalkingtech%2F2017%2F05%2F05%2Fiphone-calculator-hidden-backspace-feature-internet-freakout%2F101325358%2F&psig=AOvVaw2ladRQIc9H2PkpQFoGNi-6&ust=1664856393298000&source=images&cd=vfe&ved=2ahUKEwiTn9XAl8P6AhUAx6ACHdnUBZMQjRx6BAgAEAs)
+![image](https://www.gannett-cdn.com/-mm-/44bfc3fcd10e5c0daf6d572135a085c5ee2ce5e6/c=0-0-638-850/local/-/media/2017/05/05/USATODAY/USATODAY/636295804586832075-calculator.jpg?width=300&height=400&fit=crop&format=pjpg&auto=webp)
+<br>It is just an example. You can use any design you want.
 
 
 ### Maintainer
