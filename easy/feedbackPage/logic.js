@@ -29,7 +29,7 @@ const btn = document.getElementById('btn');
 btn.addEventListener('click', function onClick(event) {
 // 👇️ change background color
 document.body.innerHTML=` <br>You selected ${globalChoice} out of 5 <br>Thank you!<br> We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
-<br> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+<br>
 Coded by <a href="#">Kashish Verma</a>.`;
 
 // 👇️ optionally change text color
