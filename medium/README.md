@@ -7,6 +7,7 @@ This repository contains a collection of medium level programs in JavaScript. Th
 - weather_app
 - notepad_chrome_extension
 - analog_clock
+- pokedex
 
 ## How to Contribute
 Please read the [CONTRIBUTING.md](../CONTRIBUTING.md)
