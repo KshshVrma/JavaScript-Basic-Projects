@@ -9,10 +9,13 @@ Create a color picker and switcher that can change the background color of the p
 The color picker and switcher should have a display screen where the user can see the color code of the background color. The color picker and switcher should have a button for changing the background color of the page. The color picker and switcher should have a button for clearing the display screen. The color picker and switcher should have a button for deleting the last digit entered. The color picker and switcher should have a button for copying the color code to the clipboard.
 
 ### Input Format
-The input will be provided by the user using the buttons on the color picker and switcher.
+The input will be provided by the user using the buttons on the color picker and switcher, or any random hex color code will be selected when the user clicks on the button for changing the background color of the page.
 
 ### Output Format
 The output will be displayed on the display screen of the color picker and switcher.
+
+### Image Example
+![image](example.png)
 
 ### Maintainer
 - [Anamaya](https://www.linkedin.com/in/anamaya1729/)
