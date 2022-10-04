@@ -13,6 +13,8 @@ On winning show a message "Wooh! You won." and prove option to play again which 
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20201126154009/Screenshot20201126TICTACTOE2.png)
 <br>It is just an example. You can use any design you want.
 
+### Contributer
+[RakshitDabral](https://github.com/rakshitdabral)
 
 ### Maintainer
 - [Anamaya](https://www.linkedin.com/in/anamaya1729/)
