@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: yellow;
+  }
+  .content{
+    background-color: grey;
+  }
+  .num{
+    background-color: rgb(47, 166, 166);
+  }
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
+.num:hover {
+    background-color: rgb(188, 71, 58);
+    color: rgb(45, 164, 79);
+  }
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+  }
+  .active{
+    background-color: red;
+  }
