@@ -8,6 +8,11 @@ This repository contains a collection of medium level programs in JavaScript. Th
 - notepad_chrome_extension
 - analog_clock
 - pokedex
+- Github_finder
+- dictionary_app
+- infinite_scroll
+- snake_game
+- text_to_speech
 
 ## How to Contribute
 Please read the [CONTRIBUTING.md](../CONTRIBUTING.md)
