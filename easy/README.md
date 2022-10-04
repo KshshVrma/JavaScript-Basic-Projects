@@ -3,6 +3,11 @@ This repository contains a collection of beginner programs in JavaScript. These 
 
 ## List of Programs
 
+- Avatar_generator
+- GST_calculator
+- advice_generator_app
+- dice_game
+- guess_my_number
 - countown_with_timer
 - to_do_list
 - tic_tac_toe
@@ -14,6 +19,10 @@ This repository contains a collection of beginner programs in JavaScript. These 
 - currency_convertor
 - custom_field_form
 - random-color-generator
+- hangman
+- password_generator
+- random_quote_generator
+- feedback_page
 
 ## How to Contribute
 Please read the [CONTRIBUTING.md](../CONTRIBUTING.md)
