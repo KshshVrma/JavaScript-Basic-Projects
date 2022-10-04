@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <title>Text Editor</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TEXT EDITOR</h1>
+        <div class="char">
+            <button class="bold"><i class="fas fa-bold"></i></button>
+            <button class="italic"><i class="fas fa-italic"></i></button>
+            <button class="left"><i class="fas fa-align-left"></i></button>
+            <button class="mid"><i class="fas fa-align-center"></i></button>
+            <button class="right"><i class="fas fa-align-right"></i></button>
+            <button class="upperCase">A</button>
+            <button class="lowerCase">a</button>
+            <button class="camelCase">Capitalize</button>
+            <button class="clear"><i class="far fa-trash-alt"></i></button>
+            <button class="font">fonts <select class="form-control" id="sel1" onchange="changeSize(this);">
+                    <option>4</option>
+                    <option>8</option>
+                    <option>12</option>
+                    <option>16</option>
+                    <option>20</option>
+                    <option>24</option>
+                    <option>28</option>
+                    <option>32</option>
+                    <option>36</option>
+                    <option>40</option>
+                    <option>44</option>
+                    <option>48</option>
+                    <option>52</option>
+                    <option>56</option>
+                    <option>58</option>
+                </select></button>
+            <label for="color" id="colors">COLORS<input type="color" name="" id="color"></label>
+            <label for="bg-color" id="colors">BG-COLORS<input type="color" name="" id="bg-color"></label>
+        </div>
+        <textarea name="" id="textArea" cols="100" rows="30"></textarea>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+<footer>Made with 💖 by Abhi Jain</footer>
+
+</html>
