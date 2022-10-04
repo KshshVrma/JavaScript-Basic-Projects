@@ -3,7 +3,7 @@
 ## Tic Tac Toe 
 
 ### Problem Statement
-Create a tic tac toe game that can take alternate inputs with click on boxes for X & O.
+Create a tic tac toe game that can take alternate inputs with click on boxes for X & O with sound effects.
 
 ### Description
 The tic tac toe game should have a hash board and each box take a respective move of player alternativaly.
