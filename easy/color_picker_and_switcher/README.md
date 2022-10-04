@@ -21,6 +21,9 @@ The output will be displayed on the display screen of the color picker and switc
 - [Anamaya](https://www.linkedin.com/in/anamaya1729/)
 - [Vaibhav](https://https://www.linkedin.com/in/vaibhava17/)
 
+### Coded by
+- [Umesh](https://github.com/umeshchavda05)
+
 ### License
 **This project is licensed under the GNU GENERAL PUBLIC License - see the [LICENSE](../LICENSE) file for details**
 
