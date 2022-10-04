@@ -11,3 +11,9 @@ multiple shades of same color and different color, th purpose of making this web
 
 ### Input Format
 Users can select their color e.g: Monochrome,Complement,Analogic and so on, once the user has selected their type of color they want, they just need to click the color scheme button!
+
+### Image Example
+![Image](color-pallete.png)
+
+### Contributor
+[Geekky Coder](https://github.com/GeekkyCoder)
