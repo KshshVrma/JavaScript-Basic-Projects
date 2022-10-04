@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    /* background-color: #f0db4f; */
+    background-color: #9f9bc3;
+}
+
+h1, p {
+	font-family: sans-serif;
+	text-align: center;
+	color: #3f3937;
+	font-size: 60px;
+}
+
+p {
+	font-size: 30px;
+}
+
+#output, #container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    font-family: sans-serif;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}

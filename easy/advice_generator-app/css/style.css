@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+.card {
+  background-color: hsl(217, 19%, 24%);
+  width: 50%;
+  height: 40rem;
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 2rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  color: hsl(150, 100%, 66%);
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  letter-spacing: 5px;
+}
+
+.advice {
+  /* background-color: orange; */
+  color: hsl(193, 38%, 86%);
+  width: 90%;
+  height: 20rem;
+
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.img__pattern {
+  width: 90%;
+  height: 2.5rem;
+}
+
+.img__dice {
+  position: absolute;
+  top: 53.5rem;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: -6.5rem;
+  cursor: pointer;
+}
+
+.img__dice:hover + .img__dice-background {
+  color: hsl(150, 100%, 66%);
+  box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
+  transition: all 0.2s ease-in;
+}
+
+.img__dice-background {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: -5.5rem;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img__dice-background:hover {
+  color: hsl(150, 100%, 66%);
+  box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
+  transition: all 0.2s ease-in;
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+  }
+
+  /* .advice {
+    font-size: 1.5rem;
+  } */
+}

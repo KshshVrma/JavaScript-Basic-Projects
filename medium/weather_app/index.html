@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link fonts robot api-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Weather info</title>
 </head>
 <body>
-    
+    <div class="container">
+      <div class="container-data">
+        <input type="text" id="city" placeholder="Enter city name">
+        <input id="get-city" type="button" value="Get weather info" disabled>
+        <span id="city-name"></span>
+        <span id="city-date"></span>
+        <span id="city-temp"></span>
+        <span id="city-weather"></span>
+        <span id="city-temp-min"></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="app.js">
+    </script>
+    <script>
+      const title = document.getElementById("city-name");
+      const button = document.getElementById("get-city");
+      document.getElementById('city-date').innerHTML = new Date().toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      document.getElementById('city').addEventListener('keyup', function() {
+        if (document.getElementById('city').value.length > 0) {
+          button.disabled = false;
+        } else {
+          button.disabled = true;
+        }
+      });
+      button.addEventListener("click", () => {
+        const city = document.getElementById("city").value;
+        getCityData(city)
+          .then((data) => {
+            if(data.message){
+              return document.getElementById('city-weather').innerHTML = data.message
+            }
+            document.getElementById('city-temp').innerHTML = `${data.main.temp} °C`;
+            document.getElementById('city-weather').innerHTML = data.weather[0].main;
+            document.getElementById('city-temp-min').innerHTML = `${data.main.temp_min} °C / ${data.main.temp_max} °C`;
+            title.innerHTML = `${city}, ${data.sys.country}`;
+          })
+          .catch((error) => {
+            alert.apply("City not found");
+          });
+      });
+    </script>
 </body>
 </html>
