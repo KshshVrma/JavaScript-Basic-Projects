@@ -1,0 +1,86 @@
+html {
+  background: url("../images/bgimg.jpg");
+  background-size: cover;
+  font-family: "Permanent Marker", cursive;
+  color: whitesmoke;
+  min-height: 100%;
+}
+
+.imagdiv {
+  width: 200px;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+.levelpass {
+  color: white;
+  font-size: xx-large;
+  margin-top: 45vh;
+}
+#head {
+  color: whitesmoke;
+  font-size: 5vw;
+}
+
+.card_cont {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: auto auto auto auto auto;
+  margin-left: 40px;
+}
+
+.imag {
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.ulc {
+  min-width: 100%;
+}
+
+.ulcont {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 3vw;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+a:hover {
+  color: red;
+  font-size: 4vw;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.div1 {
+  animation: spinner 1s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 1, 180deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
