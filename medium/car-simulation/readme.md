@@ -1,9 +1,9 @@
 # Hacktoberfest 2022 - JavaScript Easy Programs
 
-## Countdown Timer
+## Car Simulation
 
 ### Description
-This program is for stop Watch
+This program is for implementing neural network in self driving car Simulation.
 
 ### Image Example
 [![image.png](https://i.postimg.cc/XvcjQ7JL/image.png)](https://postimg.cc/R3hx0mwJ)
