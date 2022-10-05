@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="title" content="GST Calculator" />
+    <meta
+      name="description"
+      content="A simple JavaScript app to calculate GST"
+    />
+    <meta
+      name="keywords"
+      content="gst, calculator, 2020, html, css, javascript, app"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Hirok Kangsha Banik" />
+    <meta name="theme-color" content="#f64f59" />
+
+    <meta property="og:title" content="GST Calculator" />
+    <meta property="og:site_name" content="GST Calculator" />
+    <meta property="og:url" content="https://gstcalculator.now.sh/" />
+    <meta
+      property="og:description"
+      content="A simple JavaScript app to calculate GST"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://gstcalculator.now.sh/img/android-chrome-512x512.png"
+    />
+
+    <title>GST Calculator</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <div class="title">Actual Price</div>
+        <input type="number" id="actual_price" />
+      </div>
+      <div class="card">
+        <div class="title">Final Price</div>
+        <input type="number" id="final_price" />
+      </div>
+      <div class="card">
+        <div class="title">GST</div>
+        <input type="number" id="gst_value" disabled />
+      </div>
+      <div class="card">
+        <div class="title">CGST</div>
+        <input type="number" id="cgst_value" disabled />
+      </div>
+      <div class="card">
+        <div class="title">SGST</div>
+        <input type="number" id="sgst_value" disabled />
+      </div>
+      <div class="card gst">
+        <button id="left"><</button>
+        <div class="group">
+          <span id="gst_percent">3</span>
+          <span>%</span>
+        </div>
+        <button id="right">></button>
+      </div>
+    </div>
+  </body>
+</html>
