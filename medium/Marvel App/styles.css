@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap");
+/* @import url("http://fonts.cdnfonts.com/css/marvel-2"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Marvel", sans-serif;
+  transition: 0.2s;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+}
+
+nav,
+footer {
+  z-index: 11;
+  width: 100%;
+  height: 110px;
+  background: #202020;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.copy {
+  margin-bottom: 20px;
+}
+
+footer a:hover {
+  color: #ec1d24;
+}
+
+footer a {
+  transition: 0.3s;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 6px;
+}
+
+.navContainer {
+  max-width: 1240px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navContainer a {
+  margin-left: 1rem;
+}
+
+.navContainer div {
+  margin-right: 1rem;
+}
+
+nav #searchName {
+  padding: 10px;
+  width: 300px;
+  font-size: 1rem;
+  margin: 0;
+  border-radius: 0;
+  font-weight: bold;
+  border: none;
+}
+
+nav #submitBtn {
+  font-size: 1rem;
+  padding: 10px 25px;
+  border: none;
+  background: #ec1d24;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 1240px;
+  margin: 1rem auto 10rem auto;
+}
+
+#characterDetail {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 1rem;
+  width: 90%;
+  margin: 40px auto;
+  height: auto;
+  /* display: flex;
+  justify-content: left; */
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  overflow: hidden;
+}
+
+#characterImage {
+  /* border-radius: 1rem; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: auto;
+  justify-content: center;
+}
+
+#characterImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#characterOtherDetails {
+  margin: 2rem 10%;
+  font-size: 2rem;
+}
+
+#characterName {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#characterDescription {
+  font-size: 1.5rem;
+}
+
+.noCharDes {
+  border-top: 1px solid #202020;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.Title {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #202020;
+  padding-bottom: 0.5rem;
+  margin: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid #202020;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.buttons div {
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.buttons div.active {
+  background: #ec1d24;
+  color: #fff;
+  font-weight: bold;
+  cursor: auto;
+}
+
+.buttons div:not(.active):hover {
+  background: #ff6369;
+  color: #fff;
+}
+
+.comicDetails,
+.seriesDetails,
+.eventsDetails {
+  width: 90%;
+  margin: 40px auto;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+
+.comicCard,
+.seriesCard,
+.eventsCard {
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  width: auto;
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+.comicCard img,
+.seriesCard img,
+.eventsCard img {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.comicCard:hover img,
+.seriesCard:hover img,
+.eventsCard:hover img {
+  transform: translateY(-10px);
+}
+
+.comicCard:hover .comicName,
+.seriesCard:hover .seriesName,
+.eventsCard:hover .eventsName {
+  color: #ec1d24;
+}
+
+.comicDetail,
+.seriesDetail,
+.eventsDetail {
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.comicDetail .comicName,
+.seriesDetail .seriesName,
+.eventsDetail .eventsName {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+/* .comicDetail .comicDescription,
+.seriesDetail .seriesDescription {
+  font-size: 1.2rem;
+}
+
+.seriesRating,
+.seriesType {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.seriesYear {
+  font-weight: bold;
+  font-size: 1.4rem; */
+/* } */
+
+#characterNotFound {
+  margin: 200px 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  width: 90%;
+  height: 300px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#loader {
+  transition: 0.3s;
+  height: 50vh;
+  width: 100%;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#loader.show {
+  display: flex;
+}
+
+#loader img {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#loader h3 {
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: loading 3s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    letter-spacing: 0;
+  }
+  50% {
+    letter-spacing: 1rem;
+  }
+  100% {
+    letter-spacing: 0;
+  }
+}
+
+#moreDetails {
+  background: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1111;
+  display: none;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+#moreDetails .closeBtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: red;
+}
+
+#moreDetails .info {
+  max-width: 1250px;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+#moreDetails .combo {
+  margin-top: 5rem;
+  padding: 2rem;
+  display: flex;
+}
+
+#moreDetails .combo img {
+  height: 380px;
+  object-fit: cover;
+}
+
+#moreDetails .combo .moreInfo {
+  margin: 2rem;
+  margin-top: 0;
+  width: 100%;
+}
+
+#moreDetails .combo .moreInfo #moreComicTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+#moreDetails .combo .moreInfo #comicDes {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+#moreDetails .combo .moreInfo #fromSeries {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+#moreDetails .combo .moreInfo #comicPrice {
+  width: 8rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+  background: red;
+}
+
+#imageContainer p,
+#characterCon p,
+#creatorCon p {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#comicImages {
+  width: 100%;
+  margin-bottom: 3rem;
+  /* background: rgba(0, 0, 0, 0.6); */
+  padding: 0.5rem;
+  height: 400px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+#comicImages img {
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+#characters,
+#creators {
+  margin-bottom: 3rem;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#creators {
+  padding-bottom: 10rem;
+}
+
+#characters .characterContainer,
+#creators .creatorContainer {
+  cursor: pointer;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+#characters .characterContainer:hover,
+#creators .creatorContainer:hover {
+  transform: scale(1.05);
+  color: #ff6369;
+  letter-spacing: 0.1rem;
+}
+
+#characters .characterContainer img,
+#creators .creatorContainer img {
+  height: 8rem;
+  width: 8rem;
+  object-fit: cover;
+  border-radius: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+#characters .characterContainer p,
+#creators .creatorContainer p {
+  width: 8rem;
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#moreDetails::-webkit-scrollbar,
+#comicImages::-webkit-scrollbar,
+#characters::-webkit-scrollbar,
+#creators::-webkit-scrollbar {
+  display: none;
+}
+
+#noDetails {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#noDetails span {
+  font-size: 1.5rem;
+}
+
+#moreDetails,
+#seriesTitle,
+#series,
+#events,
+#eventsTitle {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .comicDetails,
+  .seriesDetails {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #characterName {
+    font-size: 1.5rem;
+  }
+
+  #characterDescription {
+    font-size: 1.3rem;
+  }
+
+  #moreDetails .combo img {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .comicDetails,
+  .seriesDetails,
+  .eventsDetails {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .navContainer #searchName {
+    width: 200px;
+  }
+
+  #characterName {
+    font-size: 1.3rem;
+  }
+
+  #characterDescription {
+    font-size: 1rem;
+  }
+
+  #moreDetails .combo img {
+    height: 300px;
+  }
+
+  #moreDetails .combo .moreInfo {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  #moreDetails .combo .moreInfo #moreComicTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+
+  #moreDetails .combo .moreInfo #comicDes {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  #moreDetails .combo .moreInfo #fromSeries {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  #moreDetails .combo .moreInfo #comicPrice {
+    width: 5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-weight: bold;
+    background: red;
+  }
+
+  #characters .characterContainer img,
+  #creators .creatorContainer img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 4rem;
+    margin-bottom: 0.3rem;
+  }
+
+  #characters .characterContainer p,
+  #creators .creatorContainer p {
+    width: 7rem;
+    font-size: 1rem;
+  }
+
+  #creators {
+    padding-bottom: 7rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  nav {
+    height: 130px;
+  }
+
+  .navContainer {
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .navContainer a,
+  .navContainer div {
+    margin: 0;
+  }
+
+  .navContainer div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navContainer div #searchName {
+    width: 70%;
+  }
+
+  #characterDetail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comicDetails,
+  .seriesDetails,
+  .eventsDetails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #moreDetails .info {
+    margin-top: 0;
+  }
+
+  #moreDetails .combo {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #moreDetails .combo img {
+    height: auto;
+    width: 80%;
+  }
+
+  #characters .characterContainer img,
+  #creators .creatorContainer img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  #characters .characterContainer p,
+  #creators .creatorContainer p {
+    width: 5rem;
+    font-size: 0.8rem;
+  }
+
+  #creators {
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  footer {
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    font-size: 1rem;
+  }
+}
