@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	height: 100%;
+}
+
+#whiteboard {
+	cursor: crosshair;
+    position: fixed;
+}

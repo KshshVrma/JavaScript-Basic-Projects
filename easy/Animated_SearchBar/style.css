@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2a595e;
+    color: white;
+    font-family: cursive;
+}
+
+.main {
+    text-align: center;
+}
+
+input {
+    background-color: #c9eef2;
+    width: 15px;
+    height: 13px;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    font-size: 1rem;
+    transition: width 2s ease-in-out;
+    box-shadow: 0px 5px 10px 0px rgba(65 62 62 / 50%); 
+}
+
+input:focus{
+    outline: none;
+}
+
+img {
+    width: 26px;
+    position: absolute;
+    margin: 15px 0 0 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script/play.js"></script>
+  </head>
+  <body>
+    <audio id="win" src="../audio/win.mp3"></audio>
+    <div id="app">
+      <h1
+        id="count"
+        align="right"
+        style="margin-top: 20px; margin-right: 20px;"
+      ></h1>
+      <h1 align="center">Level : Extreme</h1>
+      <audio id="tick" src="../audio/tick.mp3"></audio>
+      <audio id="audio" src="../audio/mouse.mp3"></audio>
+      <audio id="wrong" src="../audio/wrong.mp3"></audio>
+      <div class="card_cont" id="cont_card">
+        <div class="imagdiv">
+          <img
+            class="imag"
+            onclick="cardclicked(`card1`,0);"
+            id="card1"
+            src="../images/card.jpg"
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="imagdiv">
+          <img
+            class="imag"
+            id="card2"
+            onclick="cardclicked(`card2`,1);"
+            src="../images/card.jpg"
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="imagdiv">
+          <img
+            class="imag"
+            id="card3"
+            src="../images/card.jpg"
+            onclick="cardclicked(`card3`,2);"
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="imagdiv">
+          <img
+            class="imag"
+            id="card4"
+            onclick="cardclicked(`card4`,3);"
+            src="../images/card.jpg"
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="imagdiv">
+          <img
+            class="imag"
+            id="card5"
+            onclick="cardclicked(`card5`,4);"
+            src="../images/card.jpg"
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="imagdiv">
+          <img
+            class="imag"
+            id="card6"
+            onclick="cardclicked(`card6`,5);"
+            src="../images/card.jpg"
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="imagdiv">
+          <img
+            class="imag"
+            onclick="cardclicked(`card7`,6);"
+            id="card7"
+            src="../images/card.jpg"
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="imagdiv">
+          <img
+            class="imag"
+            id="card8"
+            src="../images/card.jpg"
+            width="200"
+            height="250"
+            onclick="cardclicked(`card8`,7);"
+          />
+        </div>
+        <div class="imagdiv">
+          <img
+            class="imag"
+            id="card9"
+            src="../images/card.jpg"
+            width="200"
+            height="250"
+            onclick="cardclicked(`card9`,8);"
+          />
+        </div>
+        <div class="imagdiv">
+          <img
+            class="imag"
+            id="card10"
+            src="../images/card.jpg"
+            width="200"
+            height="250"
+            onclick="cardclicked(`card10`,9);"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      let tot = 20;
+      setInterval(() => {
+        if (tot == 0) {
+          document.getElementById("app").innerHTML = `
+          <h1 align="center" style="margin-top:48vh;color:red; font-size:4vw;">Level Failed!!!</h1>`;
+        }
+        document.getElementById("count").innerHTML =
+          "Time left : " + String(tot);
+        tot--;
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Color Picker And Switcher</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="main">
+        <label for="code">Background Color : </label>
+        <input type="text" id="code">
+    </div>
+
+
+    <div class="buttons">
+        <button class="btn" onclick="changeColor()">Change</button>
+        <button class="btn" onclick="randomColor()">Randomize</button>
+        <button class="btn" onclick="backSpace()">Backspace</button>
+        <button class="btn" onclick="blankClear()">Clear</button>
+    </div>
+
 </body>
+<script src="app.js"></script>
 </html>

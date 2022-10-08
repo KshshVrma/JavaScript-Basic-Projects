@@ -1,3 +1,3 @@
-# Hacktoberfest 2022 - Python Medium Programs
+# Hacktoberfest 2022 - Analog clock Preview
 
-You can add your Images here.
+![Clock preview](clock.png)

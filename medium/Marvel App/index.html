@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARVEL | Manish Prajapati | pman47</title>
+    <link
+      rel="icon"
+      href="https://www.marvel.com/static/images/favicon/android-chrome-icon-194.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+      integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script type="module">
+      import { characterNames } from "./character-names.js";
+      const dataList = document.createElement("datalist");
+      dataList.id = "nameList";
+
+      characterNames.forEach((name) => {
+        const option = document.createElement("option");
+        option.value = name;
+        dataList.append(option);
+      });
+
+      const form = document.getElementById("form");
+      form.append(dataList);
+
+      window.onload = function funLoad() {
+        const randomCharacter =
+          characterNames[Math.floor(Math.random() * characterNames.length)];
+        fetchDetails(randomCharacter);
+      };
+    </script>
+  </head>
+  <body id="body">
+    <div id="moreDetails"></div>
+
+    <!-- NAV BAR -->
+    <nav>
+      <div class="navContainer">
+        <a href="./index.html" title="Homepage">
+          <svg width="130" height="52">
+            <rect fill="#EC1D24" width="100%" height="100%"></rect>
+            <path
+              fill="#FEFEFE"
+              d="M126.222 40.059v7.906H111.58V4h7.885v36.059h6.757zm-62.564-14.5c-.61.294-1.248.44-1.87.442v-14.14h.04c.622-.005 5.264.184 5.264 6.993 0 3.559-1.58 5.804-3.434 6.705zM40.55 34.24l2.183-18.799 2.265 18.799H40.55zm69.655-22.215V4.007H87.879l-3.675 26.779-3.63-26.78h-8.052l.901 7.15c-.928-1.832-4.224-7.15-11.48-7.15-.047-.002-8.06 0-8.06 0l-.031 39.032-5.868-39.031-10.545-.005-6.072 40.44.002-40.435H21.278L17.64 26.724 14.096 4.006H4v43.966h7.95V26.78l3.618 21.192h4.226l3.565-21.192v21.192h15.327l.928-6.762h6.17l.927 6.762 15.047.008h.01v-.008h.02V33.702l1.845-.27 3.817 14.55h7.784l-.002-.01h.022l-5.011-17.048c2.538-1.88 5.406-6.644 4.643-11.203v-.002C74.894 19.777 79.615 48 79.615 48l9.256-.027 6.327-39.85v39.85h15.007v-7.908h-7.124v-10.08h7.124v-8.03h-7.124v-9.931h7.124z"
+            ></path>
+            <path fill="#EC1D24" d="M0 0h30v52H0z"></path>
+            <path
+              fill="#FEFEFE"
+              d="M31.5 48V4H21.291l-3.64 22.735L14.102 4H4v44h8V26.792L15.577 48h4.229l3.568-21.208V48z"
+            ></path>
+          </svg>
+        </a>
+
+        <div id="form">
+          <input
+            id="searchName"
+            list="nameList"
+            placeholder="Enter Character Name"
+          />
+
+          <input type="submit" id="submitBtn" value="Search" title="search" />
+        </div>
+      </div>
+    </nav>
+
+    <div id="loader" class="show">
+      <img src="./assets/loading.gif" alt="Loading" />
+      <h3>Loading</h3>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container" id="container">
+      <div id="characterDetail">
+        <div id="characterImage">
+          <img id="mainImage" alt="characterImage" />
+        </div>
+        <div id="characterOtherDetails">
+          <p id="characterName"></p>
+          <p id="characterDescription"></p>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="catBtns active" id="showComics" onclick="showComics()">
+          COMICS
+        </div>
+        <div class="catBtns" id="showSeries" onclick="showSeries()">SERIES</div>
+        <div class="catBtns" id="showEvents" onclick="showEvents()">EVENTS</div>
+      </div>
+
+      <h2 class="Title" id="comicTitle">Comics</h2>
+      <div class="comicDetails" id="comics"></div>
+
+      <h2 class="Title" id="seriesTitle">Series</h2>
+      <div class="seriesDetails" id="series"></div>
+
+      <h2 class="Title" id="eventsTitle">Events</h2>
+      <div class="eventsDetails" id="events"></div>
+    </div>
+
+    <div id="characterNotFound">
+      <h1>Character Not Found !</h1>
+    </div>
+
+    <footer>
+      <div class="copy" title="Copyright">
+        © Copyright 2022
+        <a href="https://github.com/pman47"> Manish Prajapati.</a> All rights
+        reserved.
+      </div>
+      <div class="socials">
+        <a
+          title="facebook"
+          href="https://www.facebook.com/pman47/"
+          class="fa-brands fa-facebook"
+        ></a>
+        <a
+          title="Instagram"
+          href="https://www.instagram.com/p._.manish/?hl=en"
+          class="fa-brands fa-instagram"
+        ></a>
+        <a
+          title="LinkedIn"
+          href="https://www.linkedin.com/in/pman47/"
+          class="fa-brands fa-linkedin"
+        ></a>
+        <a
+          title="GitHub"
+          href="https://github.com/pman47"
+          class="fa-brands fa-github"
+        ></a>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./App.js"></script>
+  </body>
+</html>
