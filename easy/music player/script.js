@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['Anbil-Avan','The weeknd-starboy','June-pona','Dhimu-Dhimu'];
+const songs = ['Anbil-Avan','The weeknd-starboy','June-pona','Dhimu-Dhimu','Kelly Clarkson-My Life Would Suck Without You'];
 
 // Keep track of song
 let songIndex = 0;
